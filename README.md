@@ -1,7 +1,7 @@
 R-3.1.1
 =======
 
-R-3.1.1 with builtin (vendored) libraries for RProtoBuf, rzmq, Rserve_1.8-1.tar.gz, and shiny.
+R-3.1.1 with builtin (vendored) libraries for RProtoBuf, rzmq, Rserve, and shiny.
 
 See also https://github.com/mailgun/pebblezgo for sample code using Protocol Buffers over ZeroMQ.
 
