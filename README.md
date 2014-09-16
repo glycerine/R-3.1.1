@@ -7,6 +7,7 @@ installation:
 
 ~~~
 apt-get install libx11-dev libxt-dev
+# install protocol buffers >= 2.4.1 system wide.
 git clone git@github.com:mailgun/R-3.1.1
 cd R-3.1.1
 ./configure --prefix=`pwd`/install --enable-R-static-lib  --enable-R-shlib
