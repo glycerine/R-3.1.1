@@ -6,7 +6,17 @@ R-3.1.1 with builtin Rserve_1.8-1.tar.gz.
 installation:
 
 ~~~
+# linux pre-req, X11 dev headers
 apt-get install libx11-dev libxt-dev
+
+# OSX pre-req, a working gfortran compiler (might also need XQuartz if not already)
+brew reinstall gcc49 --disable-multilib --enable-fortran
+cd /usr/local/bin
+sudo ln -s gfortran-4.9 gfortran
+# if you don't already have X11 on your mac, get XQuartz from here http://xquartz.macosforge.org
+# e.g. wget http://xquartz.macosforge.org/downloads/SL/XQuartz-2.7.7.dmg
+
+
 # install protocol buffers 2.6.0 and ZeroMQ 4.0.4 system wide.
 
 #### zeromq
