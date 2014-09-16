@@ -7,7 +7,30 @@ installation:
 
 ~~~
 apt-get install libx11-dev libxt-dev
-# install protocol buffers >= 2.4.1 system wide.
+# install protocol buffers 2.6.0 and ZeroMQ 4.0.4 system wide.
+
+#### zeromq
+wget http://download.zeromq.org/zeromq-4.0.4.tar.gz
+tar xf zeromq-4.0.4.tar.gz
+cd zeromq-4.0.4
+./configure
+make && sudo make install
+
+#### zeromq c++ header, now separate.
+git clone https://github.com/zeromq/cppzmq
+# backup, vendored location: git clone https://github.com/mailgun/cppzmq
+cd cppzmq/
+sudo cp -p zmq.hpp /usr/local/include/
+
+
+#### protocol buffers
+wget https://protobuf.googlecode.com/svn/rc/protobuf-2.6.0.tar.gz
+tar xf protobuf-2.6.0.tar.gz
+cd protobuf-2.6.0
+./configure
+make && sudo make install
+
+#### then R-3.1.1
 git clone git@github.com:mailgun/R-3.1.1
 cd R-3.1.1
 ./configure --prefix=`pwd`/install --enable-R-static-lib  --enable-R-shlib
