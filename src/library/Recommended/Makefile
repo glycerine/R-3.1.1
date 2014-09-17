@@ -123,3 +123,4 @@ RProtoBuf.ts: Rcpp.ts RCurl.ts
 shiny.ts: httpuv.ts caTools.ts RJSONIO.ts xtable.ts digest.ts htmltools.ts
 RCurl.ts: bitops.ts
 caTools.ts: bitops.ts
+httpuv.ts: Rcpp.ts
