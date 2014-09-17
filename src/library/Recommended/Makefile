@@ -119,8 +119,7 @@ class.ts: MASS.ts
 ## and for static html links
 boot.ts: MASS.ts survival.ts
 cluster.ts: MASS.ts
-## and for RProtoBuf
-RCurl.ts: bitops.ts
 RProtoBuf.ts: Rcpp.ts RCurl.ts
-## shiny needs:
 shiny.ts: httpuv.ts caTools.ts RJSONIO.ts xtable.ts digest.ts htmltools.ts
+RCurl.ts: bitops.ts
+caTools.ts: bitops.ts
