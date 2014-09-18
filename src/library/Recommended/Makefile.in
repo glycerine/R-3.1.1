@@ -125,3 +125,5 @@ shiny.ts: httpuv.ts caTools.ts RJSONIO.ts xtable.ts digest.ts htmltools.ts
 RCurl.ts: bitops.ts
 caTools.ts: bitops.ts
 httpuv.ts: Rcpp.ts
+bitops.ts: digest.ts
+htmltools.ts: digest.ts
