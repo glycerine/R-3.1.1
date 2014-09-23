@@ -128,3 +128,6 @@ httpuv.ts: Rcpp.ts
 bitops.ts: digest.ts
 htmltools.ts: digest.ts
 rmongodb.ts: plyr.ts jsonlite.ts
+ff.ts: bit.ts
+ffbase.ts: ff.ts fastmatch.ts
+
