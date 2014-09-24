@@ -131,3 +131,4 @@ rmongodb.ts: plyr.ts jsonlite.ts
 ff.ts: bit.ts
 ffbase.ts: ff.ts fastmatch.ts
 biglm.ts: DBI.ts
+RMySQL.ts: DBI.ts
