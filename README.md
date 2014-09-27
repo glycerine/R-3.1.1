@@ -10,7 +10,7 @@ installation:
 
 ~~~
 # linux pre-req, X11 dev headers, basic dev tools.
-apt-get install libx11-dev libxt-dev libcairo2-dev gcc g++ make gfortran libreadline6-dev
+apt-get install libx11-dev libxt-dev libcairo2-dev gcc g++ make gfortran libreadline6-dev curl libcurl3 libcurl4-gnutls-dev
 
 # OSX pre-req, a working gfortran compiler (might also need XQuartz if not already)
 brew reinstall gcc49 --disable-multilib --enable-fortran
@@ -54,6 +54,7 @@ git clone git@github.com:mailgun/R-3.1.1
 cd R-3.1.1
 ./configure --prefix=`pwd`/install --enable-R-static-lib  --enable-R-shlib
 make -j 4
+# if make fails: RProtoBuf needed a pre-existing Rscript, so might need to do "make install" and be sure R is on your path, and then "make" again at this point to build the RProtoBuf library.
 make install
 echo "export PATH=`pwd`/install/bin:\$PATH" >> ~/.bashrc
 . ~/.bashrc
