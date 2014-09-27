@@ -9,8 +9,8 @@ See also https://github.com/mailgun/pebblezgo for sample code using Protocol Buf
 installation:
 
 ~~~
-# linux pre-req, X11 dev headers
-apt-get install libx11-dev libxt-dev libcairo2-dev 
+# linux pre-req, X11 dev headers, basic dev tools.
+apt-get install libx11-dev libxt-dev libcairo2-dev gcc g++ make gfortran libreadline6-dev
 
 # OSX pre-req, a working gfortran compiler (might also need XQuartz if not already)
 brew reinstall gcc49 --disable-multilib --enable-fortran
