@@ -135,3 +135,4 @@ RMySQL.ts: DBI.ts
 knitr.ts: evaluate.ts formatR.ts highr.ts markdown.ts stringr.ts
 evaluate.ts: stringr.ts
 markdown.ts: mime.ts
+plyr.ts: Rcpp.ts
