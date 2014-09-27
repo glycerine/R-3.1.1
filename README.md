@@ -19,6 +19,12 @@ sudo ln -s gfortran-4.9 gfortran
 # if you don't already have X11 on your mac, get XQuartz from here http://xquartz.macosforge.org
 # e.g. wget http://xquartz.macosforge.org/downloads/SL/XQuartz-2.7.7.dmg
 
+# on OSX, to get RMySQL to install, first do:
+brew install mysql
+mkdir -p /opt/lib
+cd /opt/lib
+ln -s /usr/local/Cellar/mysql/5.6.20/lib mysql
+
 
 # install protocol buffers 2.6.0 and ZeroMQ 4.0.4 system wide.
 
