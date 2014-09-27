@@ -131,7 +131,6 @@ rmongodb.ts: plyr.ts jsonlite.ts
 ff.ts: bit.ts
 ffbase.ts: ff.ts fastmatch.ts
 biglm.ts: DBI.ts
-RMySQL.ts: DBI.ts
 knitr.ts: evaluate.ts formatR.ts highr.ts markdown.ts stringr.ts
 evaluate.ts: stringr.ts
 markdown.ts: mime.ts
