@@ -121,7 +121,7 @@ boot.ts: MASS.ts survival.ts
 cluster.ts: MASS.ts
 ## jea added for new Recommended packages that we vendor in.
 RProtoBuf.ts: Rcpp.ts RCurl.ts
-shiny.ts: httpuv.ts caTools.ts RJSONIO.ts xtable.ts digest.ts htmltools.ts
+shiny.ts: httpuv.ts caTools.ts RJSONIO.ts xtable.ts digest.ts htmltools.ts Cairo.ts testthat.ts knitr.ts markdown.ts
 RCurl.ts: bitops.ts
 caTools.ts: bitops.ts
 httpuv.ts: Rcpp.ts
@@ -132,3 +132,6 @@ ff.ts: bit.ts
 ffbase.ts: ff.ts fastmatch.ts
 biglm.ts: DBI.ts
 RMySQL.ts: DBI.ts
+knitr.ts: evaluate.ts formatR.ts highr.ts markdown.ts stringr.ts
+evaluate.ts: stringr.ts
+markdown.ts: mime.ts
