@@ -10,7 +10,7 @@ installation:
 
 ~~~
 # linux pre-req, X11 dev headers
-apt-get install libx11-dev libxt-dev
+apt-get install libx11-dev libxt-dev libcairo2-dev 
 
 # OSX pre-req, a working gfortran compiler (might also need XQuartz if not already)
 brew reinstall gcc49 --disable-multilib --enable-fortran
