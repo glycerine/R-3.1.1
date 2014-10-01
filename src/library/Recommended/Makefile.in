@@ -136,3 +136,4 @@ evaluate.ts: stringr.ts
 markdown.ts: mime.ts
 plyr.ts: Rcpp.ts
 rmarkdown.ts: yaml.ts
+devtools.ts:  httr.ts  memoise.ts  rstudioapi.ts  whisker.ts
