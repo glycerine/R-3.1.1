@@ -1,0 +1,14 @@
+
+# jea 2014 Oct 7 notes on how to get rJava installed:
+
+# obtained from R CMD javareconf -e
+JAVA_LD_LIBRARY_PATH=/usr/local/jdk1.8.0_20/jre/lib/amd64/server
+JAVA=/usr/local/jdk1.8.0_20/jre/bin/java
+JAVA_HOME=/usr/local/jdk1.8.0_20
+JAVAC=/usr/local/jdk1.8.0_20/bin/javac
+JAVAH=/usr/local/jdk1.8.0_20/bin/javah
+JAVA_LIBS=-L/usr/local/jdk1.8.0_20/jre/lib/amd64/server -ljvm
+JAVA_CPPFLAGS=-I/usr/local/jdk1.8.0_20/include -I/usr/local/jdk1.8.0_20/include/linux
+
+# (jea) then I had to add:
+export LD_LIBRARY_PATH=${JAVA_LD_LIBRARY_PATH}:${LD_LIBRARY_PATH}
