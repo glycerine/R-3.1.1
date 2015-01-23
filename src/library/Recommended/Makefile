@@ -140,3 +140,6 @@ devtools.ts:  httr.ts  memoise.ts  rstudioapi.ts  whisker.ts
 ggplot2.ts: colorspace.ts dichromat.ts gtable.ts labeling.ts munsell.ts proto.ts RColorBrewer.ts reshape2.ts scales.ts
 RJDBC.ts: rJava.ts
 nanomsgardvark.ts: Rcpp.ts
+
+nbuild:
+	R CMD build nanomsgardvark && make && pushd ../../.. && make && make install && popd
